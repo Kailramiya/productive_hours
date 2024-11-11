@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: my-app
+    env: python
+    plan: free  # or 'starter' if using a paid plan
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python app.py"
+    envVars:
+      - key: FLASK_ENV
+        value: production
+    disk:
+      name: persistent
+      sizeGB: 1
