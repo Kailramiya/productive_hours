@@ -8,6 +8,3 @@ services:
     envVars:
       - key: FLASK_ENV
         value: production
-    disk:
-      name: persistent
-      sizeGB: 1
